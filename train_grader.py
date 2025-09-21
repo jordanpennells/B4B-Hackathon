@@ -1,9 +1,9 @@
 # train_grader.py
-# Train a USDA (Select/Choice/Prime) grader from engineered features (CPU-only).
+# Train a 4-class marbling grader (Select / Choice / Prime / Wagyu) from engineered features (CPU-only).
 # Usage:
 #   python train_grader.py --features features.csv
 
-import argparse, os
+import argparse, os, warnings
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import StratifiedKFold, train_test_split, cross_val_score
@@ -14,23 +14,26 @@ from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.calibration import CalibratedClassifierCV
-from sklearn.utils.class_weight import compute_class_weight
 import matplotlib.pyplot as plt
 import joblib
 
 NON_FEATURE_COLS = {"image","label","label_source","path","relpath"}
 SEED = 42
+LABELS_ORDER = ["Select","Choice","Prime","Wagyu"]  # fixed order for reports/plots/saved bundle
 
 def load_data(path):
     df = pd.read_csv(path)
-    # index may be path; make sure label exists and unknowns removed already
+    # ensure label exists
     if "label" not in df.columns:
         raise ValueError("features.csv must contain a 'label' column")
-    # drop unknown if present
-    df = df[df["label"].isin(["Prime","Choice","Select"])].copy()
-    # compute meat_pct
+
+    # keep only our target classes
+    df = df[df["label"].isin(LABELS_ORDER)].copy()
+
+    # compute meat_pct if missing
     if "area_pct" in df.columns and "meat_pct" not in df.columns:
         df["meat_pct"] = 100.0 - df["area_pct"]
+
     # feature matrix
     feat_cols = [c for c in df.columns if c not in NON_FEATURE_COLS]
     X = df[feat_cols].values
@@ -38,15 +41,17 @@ def load_data(path):
     return df, X, y, feat_cols
 
 def model_candidates():
-    # class_weight='balanced' to handle Select being smaller
+    # class_weight='balanced' helps with class imbalance (especially Wagyu)
     logreg = Pipeline([
         ("impute", SimpleImputer(strategy="median")),
         ("scale", StandardScaler(with_mean=True, with_std=True)),
-        ("clf", LogisticRegression(max_iter=5000,class_weight="balanced",solver="saga"))
+        ("clf", LogisticRegression(max_iter=5000, class_weight="balanced", solver="saga", multi_class="auto"))
     ])
     rf = Pipeline([
         ("impute", SimpleImputer(strategy="median")),
-        ("clf", RandomForestClassifier(n_estimators=600, max_features="sqrt", min_samples_leaf=2, class_weight="balanced_subsample", random_state=SEED))
+        ("clf", RandomForestClassifier(
+            n_estimators=600, max_features="sqrt", min_samples_leaf=2,
+            class_weight="balanced_subsample", random_state=SEED))
     ])
     return {"logreg": logreg, "rf": rf}
 
@@ -61,7 +66,7 @@ def evaluate_cv(models, X, y, n_splits=5):
     return scores
 
 def plot_confusion(cm, labels, title, outfile):
-    fig, ax = plt.subplots(figsize=(4,4))
+    fig, ax = plt.subplots(figsize=(5,5))
     im = ax.imshow(cm, interpolation="nearest")
     ax.set_title(title)
     ax.set_xticks(range(len(labels))); ax.set_yticks(range(len(labels)))
@@ -70,7 +75,8 @@ def plot_confusion(cm, labels, title, outfile):
     for i in range(len(labels)):
         for j in range(len(labels)):
             ax.text(j, i, cm[i, j], ha="center", va="center")
-    plt.tight_layout(); plt.savefig(outfile); plt.close(fig)
+    plt.tight_layout(); os.makedirs("reports", exist_ok=True)
+    plt.savefig(outfile); plt.close(fig)
 
 def main():
     ap = argparse.ArgumentParser()
@@ -78,24 +84,47 @@ def main():
     args = ap.parse_args()
 
     df, X, y, feat_cols = load_data(args.features)
-    labels = ["Select","Choice","Prime"]  # fixed order for plots
 
-    # Small, imbalanced dataset → stratified hold-out for final sanity check
-    X_tr, X_te, y_tr, y_te = train_test_split(X, y, test_size=0.20, stratify=y, random_state=SEED)
+    # --- dataset checks & CV folds ---
+    if len(df) == 0:
+        raise ValueError("No rows to train on after filtering to Select/Choice/Prime/Wagyu.")
 
-    # Compare candidates via 5-fold CV on train
+    class_counts = pd.Series(y).value_counts().reindex(LABELS_ORDER).fillna(0).astype(int)
+    print("Class counts:\n", class_counts.to_string())
+
+    min_class = int(class_counts.min())
+    cv_folds = max(2, min(5, min_class)) if min_class >= 2 else None
+
+    # --- hold-out split (only if each class has >=2 examples) ---
+    can_holdout = min_class >= 2
+    if can_holdout:
+        X_tr, X_te, y_tr, y_te = train_test_split(
+            X, y, test_size=0.20, stratify=y, random_state=SEED
+        )
+    else:
+        warnings.warn(
+            "At least one class has < 2 samples. Skipping stratified hold-out and cross-validation; "
+            "the model will be fit on all data and only basic training metrics will be shown."
+        )
+        X_tr, y_tr = X, y
+        X_te, y_te = None, None
+
+    # --- model selection ---
     models = model_candidates()
-    scores = evaluate_cv(models, X_tr, y_tr, n_splits=5)
-    print("CV scores (train split):", scores)
-    # pick best by macro-F1
-    best_name = max(scores, key=lambda k: scores[k]["f1_macro_mean"])
+    if cv_folds is not None:
+        scores = evaluate_cv(models, X_tr, y_tr, n_splits=cv_folds)
+        print(f"CV (n_splits={cv_folds}) scores on train split:", scores)
+        best_name = max(scores, key=lambda k: scores[k]["f1_macro_mean"])
+    else:
+        scores = {k: {"note": "no CV due to class counts < 2"} for k in models}
+        best_name = "rf"  # sensible default when data is tiny/imbalanced
     base_model = models[best_name]
     print(f"Selected model: {best_name}")
 
-    # Fit base model on train, then calibrate on train via 3-fold (sigmoid)
+    # --- fit base model then calibrate (sigmoid) ---
     base_model.fit(X_tr, y_tr)
-    
-    # --- save feature importance from the fitted base model (before calibration) ---
+
+    # Save feature importance before calibration
     try:
         if "rf" in best_name:
             rf = base_model.named_steps["clf"]
@@ -110,35 +139,54 @@ def main():
     except Exception as e:
         print("Feature importance not available:", e)
 
-    # calibrate
-    calibrated = CalibratedClassifierCV(base_model, cv=3, method="sigmoid")
-    calibrated.fit(X_tr, y_tr)
+    # Calibrate (if possible, calibration folds require at least 2 samples per class to be safe)
+    if min_class >= 2:
+        calibrated = CalibratedClassifierCV(base_model, cv=3, method="sigmoid")
+        calibrated.fit(X_tr, y_tr)
+    else:
+        warnings.warn("Skipping probability calibration due to class counts; using base model for probabilities.")
+        calibrated = base_model
 
-    # Evaluate on hold-out
-    y_pred = calibrated.predict(X_te)
-    y_prob = calibrated.predict_proba(X_te)
-    print("\nHold-out metrics:")
-    print("Macro-F1:", f1_score(y_te, y_pred, average="macro"))
-    print("Accuracy:", accuracy_score(y_te, y_pred))
-    print("\nClassification report:\n", classification_report(y_te, y_pred, labels=labels))
+    # --- evaluation ---
+    if X_te is not None:
+        y_pred = calibrated.predict(X_te)
+        y_prob = calibrated.predict_proba(X_te)
+        print("\nHold-out metrics:")
+        print("Macro-F1:", f1_score(y_te, y_pred, average="macro"))
+        print("Accuracy:", accuracy_score(y_te, y_pred))
+        print("\nClassification report:\n",
+              classification_report(y_te, y_pred, labels=LABELS_ORDER))
+        cm = confusion_matrix(y_te, y_pred, labels=LABELS_ORDER)
+        plot_confusion(cm, LABELS_ORDER, "Hold-out Confusion", "reports/confusion_matrix.png")
+    else:
+        # quick train-set report (not a reliable estimate)
+        y_pred_tr = calibrated.predict(X_tr)
+        print("\nTrain-set (no hold-out) quick report — NOT a generalisation metric:")
+        try:
+            print("Macro-F1:", f1_score(y_tr, y_pred_tr, average="macro"))
+            print("Accuracy:", accuracy_score(y_tr, y_pred_tr))
+            print("\nClassification report:\n",
+                  classification_report(y_tr, y_pred_tr, labels=LABELS_ORDER))
+        except Exception as e:
+            print("Train-set report not available:", e)
 
-    # Confusion matrix
-    cm = confusion_matrix(y_te, y_pred, labels=labels)
-    os.makedirs("reports", exist_ok=True)
-    plot_confusion(cm, labels, "Hold-out Confusion", "reports/confusion_matrix.png")
+    # Permutation importance on hold-out (only if we have one)
+    try:
+        if X_te is not None:
+            from sklearn.inspection import permutation_importance
+            pi = permutation_importance(calibrated, X_te, y_te, n_repeats=10, random_state=SEED, scoring="f1_macro")
+            pd.DataFrame({"feature": feat_cols, "importance": pi.importances_mean}) \
+              .sort_values("importance", ascending=False) \
+              .to_csv("reports/feature_importance_perm.csv", index=False)
+            print("Saved reports/feature_importance_perm.csv")
+        else:
+            warnings.warn("Skipping permutation importance (no hold-out split).")
+    except Exception as e:
+        warnings.warn(f"Permutation importance skipped due to error: {e}")
 
-        
-        
-    from sklearn.inspection import permutation_importance
-    pi = permutation_importance(calibrated, X_te, y_te, n_repeats=10, random_state=SEED, scoring="f1_macro")
-    pd.DataFrame({"feature": feat_cols, "importance": pi.importances_mean}) \
-    .sort_values("importance", ascending=False) \
-    .to_csv("reports/feature_importance_perm.csv", index=False)
-    print("Saved reports/feature_importance_perm.csv")
-
-    # Save calibrated model + feature list
-    joblib.dump({"model": calibrated, "features": feat_cols, "labels": labels}, "grader_model.pkl")
-    print("Saved grader_model.pkl")
+    # --- save calibrated model + feature list + fixed label order ---
+    joblib.dump({"model": calibrated, "features": feat_cols, "labels": LABELS_ORDER}, "grader_model.pkl")
+    print("Saved grader_model.pkl with labels:", LABELS_ORDER)
 
 if __name__ == "__main__":
     main()

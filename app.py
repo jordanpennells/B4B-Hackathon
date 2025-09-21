@@ -87,7 +87,8 @@ def render_feature_table_html(features: dict) -> str:
 @st.cache_data
 def load_csv(path):
     df = pd.read_csv(path)
-    for c in ["prob_Select", "prob_Choice", "prob_Prime"]:
+    # normalise expected columns (include Wagyu)
+    for c in ["prob_Select", "prob_Choice", "prob_Prime", "prob_Wagyu"]:
         if c not in df.columns:
             df[c] = np.nan
     if "confidence" not in df.columns:
@@ -95,6 +96,8 @@ def load_csv(path):
         df["confidence"] = df[prob_cols].max(axis=1) if prob_cols else np.nan
     if "prime_similarity" not in df.columns and "prob_Prime" in df.columns:
         df["prime_similarity"] = df["prob_Prime"]
+    if "wagyu_similarity" not in df.columns and "prob_Wagyu" in df.columns:
+        df["wagyu_similarity"] = df["prob_Wagyu"]
     if "meat_pct" not in df.columns and "area_pct" in df.columns:
         df["meat_pct"] = 100 - df["area_pct"]
     if "image" not in df.columns and "path" in df.columns:
@@ -196,22 +199,32 @@ view = st.radio(
 
 # ==================== GALLERY VIEW ====================
 if view == "🖼️ Gallery & QA":
-    cols = st.columns(4)
+    cols = st.columns(5)
     with cols[0]:
         st.metric("Rows", len(df))
     with cols[1]:
         if "predicted" in df.columns:
             st.metric("Pred: Prime %", f"{(df['predicted']=='Prime').mean()*100:.1f}%")
     with cols[2]:
+        if "predicted" in df.columns and (df["predicted"] == "Wagyu").any():
+            st.metric("Pred: Wagyu %", f"{(df['predicted']=='Wagyu').mean()*100:.1f}%")
+        else:
+            st.metric("Pred: Wagyu %", "—")
+    with cols[3]:
         if "area_pct" in df.columns:
             st.metric("Median fat %", f"{df['area_pct'].median():.1f}")
-    with cols[3]:
+    with cols[4]:
         st.metric("High-confidence (≥0.8)", f"{(df['confidence']>=0.8).mean()*100:.1f}%")
 
     # --- On-page Filters (collapsed by default) ---
     with st.expander("Filters", expanded=False):
         pred_opts = sorted(df["predicted"].dropna().unique().tolist()) if "predicted" in df.columns else []
         true_opts = sorted(df["label"].dropna().unique().tolist()) if "label" in df.columns else []
+
+        # Add Wagyu-aware sort choices (appear only if the column exists)
+        sort_choices = ["prime_similarity","confidence","area_pct","meat_pct"]
+        if "wagyu_similarity" in df.columns:
+            sort_choices = ["wagyu_similarity"] + sort_choices
 
         c1, c2, c3, c4 = st.columns([1.2, 1.2, 1.0, 1.0])
         with c1:
@@ -221,7 +234,7 @@ if view == "🖼️ Gallery & QA":
             true_sel = st.multiselect("True (if present)", true_opts, default=true_opts,
                                       help="Restrict to these ground-truth labels.")
         with c3:
-            sort_by = st.selectbox("Sort by", ["prime_similarity","confidence","area_pct","meat_pct"])
+            sort_by = st.selectbox("Sort by", sort_choices)
         with c4:
             ascending = st.checkbox("Ascending", value=False)
 
@@ -235,29 +248,34 @@ if view == "🖼️ Gallery & QA":
 
     # Confusion (if ground truth present)
     if "label" in df.columns and "predicted" in df.columns:
-        labels = ["Select", "Choice", "Prime"]
-        cm = confusion_matrix(df["label"], df["predicted"], labels=labels)
-        fig, ax = plt.subplots(figsize=(4, 4))
-        ax.imshow(cm, interpolation="nearest")
-        ax.set_title("Confusion")
-        ax.set_xticks(range(len(labels))); ax.set_yticks(range(len(labels)))
-        ax.set_xticklabels(labels); ax.set_yticklabels(labels)
-        for i in range(len(labels)):
-            for j in range(len(labels)):
-                ax.text(j, i, int(cm[i, j]), ha="center", va="center")
-        fig.tight_layout()
-        st.pyplot(fig, width="stretch")
+        # fixed order but only include labels present to avoid empty rows
+        fixed_order = ["Select", "Choice", "Prime", "Wagyu"]
+        labels = [lbl for lbl in fixed_order
+                  if ((df["label"] == lbl).any() or (df["predicted"] == lbl).any())]
+        if labels:
+            cm = confusion_matrix(df["label"], df["predicted"], labels=labels)
+            fig, ax = plt.subplots(figsize=(5 if len(labels) >= 4 else 4,
+                                            5 if len(labels) >= 4 else 4))
+            ax.imshow(cm, interpolation="nearest")
+            ax.set_title("Confusion")
+            ax.set_xticks(range(len(labels))); ax.set_yticks(range(len(labels)))
+            ax.set_xticklabels(labels); ax.set_yticklabels(labels)
+            for i in range(len(labels)):
+                for j in range(len(labels)):
+                    ax.text(j, i, int(cm[i, j]), ha="center", va="center")
+            fig.tight_layout()
+            st.pyplot(fig, width="stretch")
 
     st.divider()
 
     # Apply Filter + sort
     work = df.copy()
-    if "predicted" in work.columns and pred_sel:
+    if "predicted" in work.columns and 'pred_sel' in locals() and pred_sel:
         work = work[work["predicted"].isin(pred_sel)]
-    if "label" in work.columns and ("true_sel" in locals()) and true_sel:
+    if "label" in work.columns and 'true_sel' in locals() and true_sel:
         work = work[work["label"].isin(true_sel)]
     work = work[(work["confidence"] >= conf_rng[0]) & (work["confidence"] <= conf_rng[1])]
-    if ("sort_by" in locals()) and sort_by in work.columns:
+    if 'sort_by' in locals() and sort_by in work.columns:
         work = work.sort_values(sort_by, ascending=ascending)
 
     # Cards grid
@@ -289,13 +307,26 @@ if view == "🖼️ Gallery & QA":
                 if "area_pct" in row:  meta.append(f"**Fat %:** {row['area_pct']:.1f}")
                 if "meat_pct" in row:  meta.append(f"**Meat %:** {row['meat_pct']:.1f}")
                 if "prime_similarity" in row: meta.append(f"**P(Prime):** {row['prime_similarity']:.2f}")
+                if "wagyu_similarity" in row and not pd.isna(row.get("wagyu_similarity")):
+                    meta.append(f"**P(Wagyu):** {row['wagyu_similarity']:.2f}")
                 st.markdown(" • ".join(meta))
 
-                probs = {k: row.get(k, np.nan) for k in ["prob_Select","prob_Choice","prob_Prime"] if k in row}
-                if probs:
-                    st.progress(min(0.999, float(probs.get("prob_Select",0.0))), text=f"Select {probs.get('prob_Select',0.0):.2f}")
-                    st.progress(min(0.999, float(probs.get("prob_Choice",0.0))), text=f"Choice {probs.get('prob_Choice',0.0):.2f}")
-                    st.progress(min(0.999, float(probs.get("prob_Prime",0.0))),  text=f"Prime  {probs.get('prob_Prime',0.0):.2f}")
+                # Dynamic probability bars for all prob_* columns (incl. Wagyu)
+                prob_cols = [(k, row.get(k, np.nan)) for k in row.keys() if k.startswith("prob_")]
+                # Keep a friendly order
+                friendly = {"prob_Select":"Select","prob_Choice":"Choice","prob_Prime":"Prime","prob_Wagyu":"Wagyu"}
+                def sort_key(kv):
+                    k,_ = kv
+                    order = ["prob_Select","prob_Choice","prob_Prime","prob_Wagyu"]
+                    return order.index(k) if k in order else 999
+                for k, v in sorted(prob_cols, key=sort_key):
+                    try:
+                        label = friendly.get(k, k.replace("prob_",""))
+                        st.progress(min(0.999, float(v if pd.notna(v) else 0.0)),
+                                    text=f"{label} {0.0 if pd.isna(v) else float(v):.2f}")
+                    except Exception:
+                        # ignore any weird types
+                        pass
 
 # ==================== WALKTHROUGH VIEW ====================
 if view == "🧭 Guided Walkthrough":
@@ -393,7 +424,10 @@ if view == "🧭 Guided Walkthrough":
     ax.imshow(rgb)
     if show_edges:
         edges = seg.find_boundaries(mask, mode="outer")
-        edge_rgb = np.dstack([np.zeros_like(edges), edges.astype(float), np.zeros_like(edges)])
+        # draw green edge overlay (float)
+        edge_rgb = np.dstack([np.zeros_like(edges, dtype=np.float32),
+                              edges.astype(np.float32),
+                              np.zeros_like(edges, dtype=np.float32)])
         ax.imshow(edge_rgb, alpha=1.0)
     else:
         # green translucent overlay (float)
@@ -410,11 +444,10 @@ if view == "🧭 Guided Walkthrough":
     probs_df = None
     pred_label = None
     confidence = np.nan
-    bundle = bundle  # already loaded
     if bundle is not None:
         mdl   = bundle["model"]
         fcols = bundle["features"]
-        labs  = bundle["labels"]
+        labs  = bundle["labels"]  # e.g. ["Select","Choice","Prime","Wagyu"]
         xrow = {k: np.nan for k in fcols}
         for k, v in feats.items():
             if k in xrow: xrow[k] = v
@@ -447,8 +480,13 @@ if view == "🧭 Guided Walkthrough":
     if probs_df is not None:
         st.markdown("---")
         st.markdown(f"**Predicted grade:** `{pred_label}` • **Confidence:** `{confidence:.2f}`")
-        st.progress(min(0.999, float(probs_df.get("prob_Select", 0.0))), text=f"Select {probs_df.get('prob_Select', 0.0):.2f}")
-        st.progress(min(0.999, float(probs_df.get("prob_Choice", 0.0))), text=f"Choice {probs_df.get('prob_Choice', 0.0):.2f}")
-        st.progress(min(0.999, float(probs_df.get("prob_Prime", 0.0))),  text=f"Prime  {probs_df.get('prob_Prime', 0.0):.2f}")
+
+        # Dynamic probability bars (support Wagyu)
+        friendly = {"prob_Select":"Select","prob_Choice":"Choice","prob_Prime":"Prime","prob_Wagyu":"Wagyu"}
+        order = ["prob_Select","prob_Choice","prob_Prime","prob_Wagyu"]
+        for key in order:
+            if key in probs_df:
+                p = probs_df[key]
+                st.progress(min(0.999, float(p)), text=f"{friendly[key]} {p:.2f}")
     else:
         st.info("Model bundle not loaded — features shown only.")
