@@ -30,9 +30,24 @@ def load_data(path):
     # keep only our target classes
     df = df[df["label"].isin(LABELS_ORDER)].copy()
 
-    # compute meat_pct if missing
-    if "area_pct" in df.columns and "meat_pct" not in df.columns:
-        df["meat_pct"] = 100.0 - df["area_pct"]
+    # ----- steak-aware preference -----
+    # Use fat% inside steak if present; else fall back to frame-based area_pct.
+    used_fat_col = None
+    if "fat_within_steak_pct" in df.columns:
+        used_fat_col = "fat_within_steak_pct"
+        # (Re)define meat_pct from steak-fat%
+        df["meat_pct"] = 100.0 - df["fat_within_steak_pct"]
+        # Optional: if you do NOT want frame-based area_pct to influence the model, drop it here:
+        # df = df.drop(columns=[c for c in ["area_pct"] if c in df.columns])
+    else:
+        # legacy fallback
+        if "area_pct" not in df.columns:
+            raise ValueError("Expected 'fat_within_steak_pct' or 'area_pct' in features.csv")
+        used_fat_col = "area_pct"
+        if "meat_pct" not in df.columns:
+            df["meat_pct"] = 100.0 - df["area_pct"]
+
+    print(f"Training will use fat metric: {used_fat_col}")
 
     # feature matrix
     feat_cols = [c for c in df.columns if c not in NON_FEATURE_COLS]
@@ -41,7 +56,7 @@ def load_data(path):
     return df, X, y, feat_cols
 
 def model_candidates():
-    # class_weight='balanced' helps with class imbalance (especially Wagyu)
+    # class_weight='balanced' helps with class imbalance
     logreg = Pipeline([
         ("impute", SimpleImputer(strategy="median")),
         ("scale", StandardScaler(with_mean=True, with_std=True)),
@@ -67,7 +82,7 @@ def evaluate_cv(models, X, y, n_splits=5):
 
 def plot_confusion(cm, labels, title, outfile):
     fig, ax = plt.subplots(figsize=(5,5))
-    im = ax.imshow(cm, interpolation="nearest")
+    ax.imshow(cm, interpolation="nearest")
     ax.set_title(title)
     ax.set_xticks(range(len(labels))); ax.set_yticks(range(len(labels)))
     ax.set_xticklabels(labels); ax.set_yticklabels(labels)
@@ -139,7 +154,7 @@ def main():
     except Exception as e:
         print("Feature importance not available:", e)
 
-    # Calibrate (if possible, calibration folds require at least 2 samples per class to be safe)
+    # Calibrate (if possible)
     if min_class >= 2:
         calibrated = CalibratedClassifierCV(base_model, cv=3, method="sigmoid")
         calibrated.fit(X_tr, y_tr)
@@ -150,7 +165,6 @@ def main():
     # --- evaluation ---
     if X_te is not None:
         y_pred = calibrated.predict(X_te)
-        y_prob = calibrated.predict_proba(X_te)
         print("\nHold-out metrics:")
         print("Macro-F1:", f1_score(y_te, y_pred, average="macro"))
         print("Accuracy:", accuracy_score(y_te, y_pred))
@@ -159,7 +173,6 @@ def main():
         cm = confusion_matrix(y_te, y_pred, labels=LABELS_ORDER)
         plot_confusion(cm, LABELS_ORDER, "Hold-out Confusion", "reports/confusion_matrix.png")
     else:
-        # quick train-set report (not a reliable estimate)
         y_pred_tr = calibrated.predict(X_tr)
         print("\nTrain-set (no hold-out) quick report — NOT a generalisation metric:")
         try:

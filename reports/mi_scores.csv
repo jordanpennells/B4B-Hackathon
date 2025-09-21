@@ -1,0 +1,355 @@
+path,image,relpath,label,MI_handcrafted,MI_lda,MI_logit
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Choice-Moderate.png,Choice-Moderate.png,Choice-Moderate.png,Choice,0.429155799006776,0.6212235089695521,0.5928790307481223
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Choice-Moderate.png,Choice-Moderate.png,Choice-Moderate.png,Choice,0.429155799006776,0.6212235089695521,0.5928790307481223
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Choice-Modest.png,Choice-Modest.png,Choice-Modest.png,Choice,0.42614996790658805,0.645344957335629,0.5773216809495137
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Choice-Modest.png,Choice-Modest.png,Choice-Modest.png,Choice,0.42614996790658805,0.645344957335629,0.5773216809495137
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Choice-Small.png,Choice-Small.png,Choice-Small.png,Choice,0.4269158261336807,0.6341964537698904,0.470315497374336
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Choice-Small.png,Choice-Small.png,Choice-Small.png,Choice,0.4269158261336807,0.6341964537698904,0.470315497374336
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Choice.png,Choice.png,Choice.png,Choice,0.4966682053304897,0.3817625898377178,0.41541027964121563
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Choice.png,Choice.png,Choice.png,Choice,0.4966682053304897,0.3817625898377178,0.41541027964121563
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Prime-ModeratelyAbundant.png,Prime-ModeratelyAbundant.png,Prime-ModeratelyAbundant.png,Prime,0.3765148480326209,0.6174186813068424,0.5862521912256452
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Prime-ModeratelyAbundant.png,Prime-ModeratelyAbundant.png,Prime-ModeratelyAbundant.png,Prime,0.3765148480326209,0.6174186813068424,0.5862521912256452
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Prime-SlightlyAbundant.png,Prime-SlightlyAbundant.png,Prime-SlightlyAbundant.png,Prime,0.4460683595467674,0.45093097047372793,0.5805194023547258
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Prime-SlightlyAbundant.png,Prime-SlightlyAbundant.png,Prime-SlightlyAbundant.png,Prime,0.4460683595467674,0.45093097047372793,0.5805194023547258
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Prime1.png,Prime1.png,Prime1.png,Prime,0.46148709735232174,0.36137793351680764,0.5899337084543927
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Prime1.png,Prime1.png,Prime1.png,Prime,0.46148709735232174,0.36137793351680764,0.5899337084543927
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Select-Slight.png,Select-Slight.png,Select-Slight.png,Select,0.43294274035036323,0.5432115461081547,0.4933405366730938
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Select-Slight.png,Select-Slight.png,Select-Slight.png,Select,0.43294274035036323,0.5432115461081547,0.4933405366730938
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Select.jpeg,Select.jpeg,Select.jpeg,Select,0.5114151886447057,0.39824159003496,0.31575304047995356
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Select.jpeg,Select.jpeg,Select.jpeg,Select,0.5114151886447057,0.39824159003496,0.31575304047995356
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Select.png,Select.png,Select.png,Select,0.5607631502045511,0.23508491509662832,0.03610560681507446
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Select.png,Select.png,Select.png,Select,0.5607631502045511,0.23508491509662832,0.03610560681507446
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu-scaled.jpg,Wagyu-scaled.jpg,Wagyu-scaled.jpg,Wagyu,0.4490523647064042,0.600884689538636,0.5961987501768952
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu-scaled.jpg,Wagyu-scaled.jpg,Wagyu-scaled.jpg,Wagyu,0.4490523647064042,0.600884689538636,0.5961987501768952
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu1.png,Wagyu1.png,Wagyu1.png,Wagyu,0.3198046950605339,0.9369344296899109,0.9998783915241208
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu1.png,Wagyu1.png,Wagyu1.png,Wagyu,0.3198046950605339,0.9369344296899109,0.9998783915241208
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu10.png,Wagyu10.png,Wagyu10.png,Wagyu,0.30832504413307205,0.8422242950422956,0.9960118059141294
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu10.png,Wagyu10.png,Wagyu10.png,Wagyu,0.30832504413307205,0.8422242950422956,0.9960118059141294
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu100.png,Wagyu100.png,Wagyu100.png,Wagyu,0.19595669002289923,0.8343678797380186,0.9273908460245682
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu100.png,Wagyu100.png,Wagyu100.png,Wagyu,0.19595669002289923,0.8343678797380186,0.9273908460245682
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu101.png,Wagyu101.png,Wagyu101.png,Wagyu,0.40821324333565767,0.9620785432083193,0.9999894249191313
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu101.png,Wagyu101.png,Wagyu101.png,Wagyu,0.40821324333565767,0.9620785432083193,0.9999894249191313
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu102.png,Wagyu102.png,Wagyu102.png,Wagyu,0.26754044933020044,0.9638575988890007,0.9997304827885013
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu102.png,Wagyu102.png,Wagyu102.png,Wagyu,0.26754044933020044,0.9638575988890007,0.9997304827885013
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu103.png,Wagyu103.png,Wagyu103.png,Wagyu,0.2535988207257364,0.906722798741226,0.9996067302466912
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu103.png,Wagyu103.png,Wagyu103.png,Wagyu,0.2535988207257364,0.906722798741226,0.9996067302466912
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu104.png,Wagyu104.png,Wagyu104.png,Wagyu,0.4238257512527393,0.9571367994942237,0.9999852952647711
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu104.png,Wagyu104.png,Wagyu104.png,Wagyu,0.4238257512527393,0.9571367994942237,0.9999852952647711
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu105.png,Wagyu105.png,Wagyu105.png,Wagyu,0.3264918617619556,0.9459172184141504,0.9999301595478909
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu105.png,Wagyu105.png,Wagyu105.png,Wagyu,0.3264918617619556,0.9459172184141504,0.9999301595478909
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu106.jpg,Wagyu106.jpg,Wagyu106.jpg,Wagyu,0.3675674104566289,0.8622984157843893,0.9993686914178791
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu106.jpg,Wagyu106.jpg,Wagyu106.jpg,Wagyu,0.3675674104566289,0.8622984157843893,0.9993686914178791
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu108.jpg,Wagyu108.jpg,Wagyu108.jpg,Wagyu,0.30676767862757137,0.8522461080519664,0.9661733525797679
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu108.jpg,Wagyu108.jpg,Wagyu108.jpg,Wagyu,0.30676767862757137,0.8522461080519664,0.9661733525797679
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu109.jpg,Wagyu109.jpg,Wagyu109.jpg,Wagyu,0.3283619548242833,0.7733936669272403,0.9967039826791134
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu109.jpg,Wagyu109.jpg,Wagyu109.jpg,Wagyu,0.3283619548242833,0.7733936669272403,0.9967039826791134
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu11.png,Wagyu11.png,Wagyu11.png,Wagyu,0.46934670273263934,0.9364919916870343,0.9999789445873829
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu11.png,Wagyu11.png,Wagyu11.png,Wagyu,0.46934670273263934,0.9364919916870343,0.9999789445873829
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu110.jpg,Wagyu110.jpg,Wagyu110.jpg,Wagyu,0.29699227356404406,0.7383972348278038,0.9244385811893866
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu110.jpg,Wagyu110.jpg,Wagyu110.jpg,Wagyu,0.29699227356404406,0.7383972348278038,0.9244385811893866
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu12.png,Wagyu12.png,Wagyu12.png,Wagyu,0.26258594749290387,0.9829607667246305,0.9995788865594228
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu12.png,Wagyu12.png,Wagyu12.png,Wagyu,0.26258594749290387,0.9829607667246305,0.9995788865594228
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu13.png,Wagyu13.png,Wagyu13.png,Wagyu,0.26414295508365915,0.9735498347931629,0.9994364977771896
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu13.png,Wagyu13.png,Wagyu13.png,Wagyu,0.26414295508365915,0.9735498347931629,0.9994364977771896
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu14.png,Wagyu14.png,Wagyu14.png,Wagyu,0.25598561427426053,0.9400083085757847,0.9996573760722239
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu14.png,Wagyu14.png,Wagyu14.png,Wagyu,0.25598561427426053,0.9400083085757847,0.9996573760722239
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu15.png,Wagyu15.png,Wagyu15.png,Wagyu,0.27359337937184053,0.9563385514484709,0.9989411793872223
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu15.png,Wagyu15.png,Wagyu15.png,Wagyu,0.27359337937184053,0.9563385514484709,0.9989411793872223
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu16.png,Wagyu16.png,Wagyu16.png,Wagyu,0.10226154188779582,0.8499212456886364,0.8986614469014422
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu16.png,Wagyu16.png,Wagyu16.png,Wagyu,0.10226154188779582,0.8499212456886364,0.8986614469014422
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu17.png,Wagyu17.png,Wagyu17.png,Wagyu,0.25361016503180395,0.9587742510781697,0.9998827134802074
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu17.png,Wagyu17.png,Wagyu17.png,Wagyu,0.25361016503180395,0.9587742510781697,0.9998827134802074
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu18.png,Wagyu18.png,Wagyu18.png,Wagyu,0.2945284887688524,0.8320090729785542,0.9908946661843783
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu18.png,Wagyu18.png,Wagyu18.png,Wagyu,0.2945284887688524,0.8320090729785542,0.9908946661843783
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu19.png,Wagyu19.png,Wagyu19.png,Wagyu,0.3401572365861609,0.9008209356129104,0.9954452906650396
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu19.png,Wagyu19.png,Wagyu19.png,Wagyu,0.3401572365861609,0.9008209356129104,0.9954452906650396
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu2.png,Wagyu2.png,Wagyu2.png,Wagyu,0.2378310567159691,0.9530006201498875,0.9981256257106588
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu2.png,Wagyu2.png,Wagyu2.png,Wagyu,0.2378310567159691,0.9530006201498875,0.9981256257106588
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu20.png,Wagyu20.png,Wagyu20.png,Wagyu,0.30062379876757866,0.9562954101220246,0.9998143733768332
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu20.png,Wagyu20.png,Wagyu20.png,Wagyu,0.30062379876757866,0.9562954101220246,0.9998143733768332
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu21.png,Wagyu21.png,Wagyu21.png,Wagyu,0.245630323961681,0.9303933388795397,0.9975914785297816
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu21.png,Wagyu21.png,Wagyu21.png,Wagyu,0.245630323961681,0.9303933388795397,0.9975914785297816
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu22.png,Wagyu22.png,Wagyu22.png,Wagyu,0.2681496884847908,0.969380947395195,0.9998812033782155
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu22.png,Wagyu22.png,Wagyu22.png,Wagyu,0.2681496884847908,0.969380947395195,0.9998812033782155
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu23.png,Wagyu23.png,Wagyu23.png,Wagyu,0.30015443140168774,0.8814218471533257,0.9976558137059438
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu23.png,Wagyu23.png,Wagyu23.png,Wagyu,0.30015443140168774,0.8814218471533257,0.9976558137059438
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu24.png,Wagyu24.png,Wagyu24.png,Wagyu,0.25477290603150937,0.961714753190781,0.999393973213257
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu24.png,Wagyu24.png,Wagyu24.png,Wagyu,0.25477290603150937,0.961714753190781,0.999393973213257
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu25.png,Wagyu25.png,Wagyu25.png,Wagyu,0.34094597392160453,0.959897533543235,0.9998711445689975
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu25.png,Wagyu25.png,Wagyu25.png,Wagyu,0.34094597392160453,0.959897533543235,0.9998711445689975
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu26.png,Wagyu26.png,Wagyu26.png,Wagyu,0.24492299961688996,0.9625844892578055,0.9985159809521317
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu26.png,Wagyu26.png,Wagyu26.png,Wagyu,0.24492299961688996,0.9625844892578055,0.9985159809521317
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu27.png,Wagyu27.png,Wagyu27.png,Wagyu,0.3072076503031547,0.9356941500365018,0.9997999773195888
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu27.png,Wagyu27.png,Wagyu27.png,Wagyu,0.3072076503031547,0.9356941500365018,0.9997999773195888
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu28.png,Wagyu28.png,Wagyu28.png,Wagyu,0.4641829804122198,0.9328325911085548,0.9999818243131112
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu28.png,Wagyu28.png,Wagyu28.png,Wagyu,0.4641829804122198,0.9328325911085548,0.9999818243131112
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu29.png,Wagyu29.png,Wagyu29.png,Wagyu,0.2924416494486052,0.8623974574197993,0.9914355854874112
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu29.png,Wagyu29.png,Wagyu29.png,Wagyu,0.2924416494486052,0.8623974574197993,0.9914355854874112
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu3.png,Wagyu3.png,Wagyu3.png,Wagyu,0.3136768166284072,0.9162374559576841,0.9998820462294361
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu3.png,Wagyu3.png,Wagyu3.png,Wagyu,0.3136768166284072,0.9162374559576841,0.9998820462294361
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu30.png,Wagyu30.png,Wagyu30.png,Wagyu,0.28585372253962993,0.9138995878197076,0.9997734802966612
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu30.png,Wagyu30.png,Wagyu30.png,Wagyu,0.28585372253962993,0.9138995878197076,0.9997734802966612
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu31.png,Wagyu31.png,Wagyu31.png,Wagyu,0.18350711491943875,0.8298772236658654,0.9645460265004079
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu31.png,Wagyu31.png,Wagyu31.png,Wagyu,0.18350711491943875,0.8298772236658654,0.9645460265004079
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu32.png,Wagyu32.png,Wagyu32.png,Wagyu,0.3061682520527609,0.7947223040576029,0.9802775727327276
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu32.png,Wagyu32.png,Wagyu32.png,Wagyu,0.3061682520527609,0.7947223040576029,0.9802775727327276
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu33.png,Wagyu33.png,Wagyu33.png,Wagyu,0.41849442445831425,0.9447895615575498,0.9999902480142437
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu33.png,Wagyu33.png,Wagyu33.png,Wagyu,0.41849442445831425,0.9447895615575498,0.9999902480142437
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu34.png,Wagyu34.png,Wagyu34.png,Wagyu,0.2696682281360311,0.9324326687400656,0.9992778737411
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu34.png,Wagyu34.png,Wagyu34.png,Wagyu,0.2696682281360311,0.9324326687400656,0.9992778737411
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu35.png,Wagyu35.png,Wagyu35.png,Wagyu,0.18263330425131521,0.8243186576778089,0.9028804426302853
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu35.png,Wagyu35.png,Wagyu35.png,Wagyu,0.18263330425131521,0.8243186576778089,0.9028804426302853
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu36.png,Wagyu36.png,Wagyu36.png,Wagyu,0.39739753561257174,0.7877001718179945,0.9153749838754984
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu36.png,Wagyu36.png,Wagyu36.png,Wagyu,0.39739753561257174,0.7877001718179945,0.9153749838754984
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu37.png,Wagyu37.png,Wagyu37.png,Wagyu,0.1966366263860252,0.8640652286244703,0.9736641188118923
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu37.png,Wagyu37.png,Wagyu37.png,Wagyu,0.1966366263860252,0.8640652286244703,0.9736641188118923
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu38.png,Wagyu38.png,Wagyu38.png,Wagyu,0.37100058367626115,0.9791395937131536,0.9999946267469325
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu38.png,Wagyu38.png,Wagyu38.png,Wagyu,0.37100058367626115,0.9791395937131536,0.9999946267469325
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu39.png,Wagyu39.png,Wagyu39.png,Wagyu,0.27938715183886753,0.9999999999998919,0.9999497316256285
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu39.png,Wagyu39.png,Wagyu39.png,Wagyu,0.27938715183886753,0.9999999999998919,0.9999497316256285
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu4.png,Wagyu4.png,Wagyu4.png,Wagyu,0.26445388458447955,0.9659351725957012,0.9997293180406768
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu4.png,Wagyu4.png,Wagyu4.png,Wagyu,0.26445388458447955,0.9659351725957012,0.9997293180406768
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu40.png,Wagyu40.png,Wagyu40.png,Wagyu,0.3351384737124106,0.939507059737329,0.9998837715138484
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu40.png,Wagyu40.png,Wagyu40.png,Wagyu,0.3351384737124106,0.939507059737329,0.9998837715138484
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu41.png,Wagyu41.png,Wagyu41.png,Wagyu,0.2350369591018206,0.833167846091534,0.9312911737248534
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu41.png,Wagyu41.png,Wagyu41.png,Wagyu,0.2350369591018206,0.833167846091534,0.9312911737248534
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu42.png,Wagyu42.png,Wagyu42.png,Wagyu,0.2924185289401702,0.9913373170331898,0.9999437875800781
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu42.png,Wagyu42.png,Wagyu42.png,Wagyu,0.2924185289401702,0.9913373170331898,0.9999437875800781
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu43.png,Wagyu43.png,Wagyu43.png,Wagyu,0.2613977319446449,0.9112928926119711,0.9984780369179002
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu43.png,Wagyu43.png,Wagyu43.png,Wagyu,0.2613977319446449,0.9112928926119711,0.9984780369179002
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu44.png,Wagyu44.png,Wagyu44.png,Wagyu,0.29653321700236335,0.9424958754026573,0.9999485022109179
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu44.png,Wagyu44.png,Wagyu44.png,Wagyu,0.29653321700236335,0.9424958754026573,0.9999485022109179
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu45.png,Wagyu45.png,Wagyu45.png,Wagyu,0.19369727249594568,0.755801769840417,0.7666142838826674
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu45.png,Wagyu45.png,Wagyu45.png,Wagyu,0.19369727249594568,0.755801769840417,0.7666142838826674
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu46.png,Wagyu46.png,Wagyu46.png,Wagyu,0.31663427134171346,0.9477867458950473,0.9999481484224836
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu46.png,Wagyu46.png,Wagyu46.png,Wagyu,0.31663427134171346,0.9477867458950473,0.9999481484224836
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu47.png,Wagyu47.png,Wagyu47.png,Wagyu,0.2263424416904032,0.9777934917632276,0.9997403963014722
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu47.png,Wagyu47.png,Wagyu47.png,Wagyu,0.2263424416904032,0.9777934917632276,0.9997403963014722
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu48.png,Wagyu48.png,Wagyu48.png,Wagyu,0.2706982602988476,0.933593523393371,0.9963206999418365
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu48.png,Wagyu48.png,Wagyu48.png,Wagyu,0.2706982602988476,0.933593523393371,0.9963206999418365
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu49.png,Wagyu49.png,Wagyu49.png,Wagyu,0.1279743542054489,0.8306412153078839,0.97923978273335
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu49.png,Wagyu49.png,Wagyu49.png,Wagyu,0.1279743542054489,0.8306412153078839,0.97923978273335
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu5.png,Wagyu5.png,Wagyu5.png,Wagyu,0.2197318888832969,0.913372318846035,0.9981718873591219
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu5.png,Wagyu5.png,Wagyu5.png,Wagyu,0.2197318888832969,0.913372318846035,0.9981718873591219
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu50.png,Wagyu50.png,Wagyu50.png,Wagyu,0.35664162485769946,0.9874770051599855,0.9999897883276407
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu50.png,Wagyu50.png,Wagyu50.png,Wagyu,0.35664162485769946,0.9874770051599855,0.9999897883276407
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu51.png,Wagyu51.png,Wagyu51.png,Wagyu,0.4002787769400866,0.7857598033150922,0.9001723253707737
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu51.png,Wagyu51.png,Wagyu51.png,Wagyu,0.4002787769400866,0.7857598033150922,0.9001723253707737
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu52.png,Wagyu52.png,Wagyu52.png,Wagyu,0.4097996674788294,0.76459729073503,0.9341681549911948
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu52.png,Wagyu52.png,Wagyu52.png,Wagyu,0.4097996674788294,0.76459729073503,0.9341681549911948
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu53.png,Wagyu53.png,Wagyu53.png,Wagyu,0.2237045029896539,0.9269004383400637,0.9957065742593524
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu53.png,Wagyu53.png,Wagyu53.png,Wagyu,0.2237045029896539,0.9269004383400637,0.9957065742593524
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu54.png,Wagyu54.png,Wagyu54.png,Wagyu,0.3118509194179255,0.9060567643940565,0.9980686262184584
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu54.png,Wagyu54.png,Wagyu54.png,Wagyu,0.3118509194179255,0.9060567643940565,0.9980686262184584
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu55.png,Wagyu55.png,Wagyu55.png,Wagyu,0.26783754706751106,0.9377710621330649,0.99902745646679
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu55.png,Wagyu55.png,Wagyu55.png,Wagyu,0.26783754706751106,0.9377710621330649,0.99902745646679
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu56.png,Wagyu56.png,Wagyu56.png,Wagyu,0.2981022457809195,0.8538354723286994,0.9961040553326762
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu56.png,Wagyu56.png,Wagyu56.png,Wagyu,0.2981022457809195,0.8538354723286994,0.9961040553326762
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu57.png,Wagyu57.png,Wagyu57.png,Wagyu,0.35985164758335436,0.7711043955022595,0.9438302274025663
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu57.png,Wagyu57.png,Wagyu57.png,Wagyu,0.35985164758335436,0.7711043955022595,0.9438302274025663
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu58.png,Wagyu58.png,Wagyu58.png,Wagyu,0.5310823095080576,0.9917287842167042,0.9999987296574502
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu58.png,Wagyu58.png,Wagyu58.png,Wagyu,0.5310823095080576,0.9917287842167042,0.9999987296574502
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu6.png,Wagyu6.png,Wagyu6.png,Wagyu,0.4954477107873043,0.6538243844911144,0.6673875165501563
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu6.png,Wagyu6.png,Wagyu6.png,Wagyu,0.4954477107873043,0.6538243844911144,0.6673875165501563
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu60.png,Wagyu60.png,Wagyu60.png,Wagyu,0.22027908701758525,0.9324104634510016,0.9964671215283113
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu60.png,Wagyu60.png,Wagyu60.png,Wagyu,0.22027908701758525,0.9324104634510016,0.9964671215283113
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu61.png,Wagyu61.png,Wagyu61.png,Wagyu,0.14605285169065813,0.7995333566376739,0.8380014684831366
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu61.png,Wagyu61.png,Wagyu61.png,Wagyu,0.14605285169065813,0.7995333566376739,0.8380014684831366
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu62.png,Wagyu62.png,Wagyu62.png,Wagyu,0.3725513850516914,0.8115989273179022,0.9361244238864351
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu62.png,Wagyu62.png,Wagyu62.png,Wagyu,0.3725513850516914,0.8115989273179022,0.9361244238864351
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu63.png,Wagyu63.png,Wagyu63.png,Wagyu,0.3287489327890697,0.6533377283826117,0.6344679497950406
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu63.png,Wagyu63.png,Wagyu63.png,Wagyu,0.3287489327890697,0.6533377283826117,0.6344679497950406
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu64.png,Wagyu64.png,Wagyu64.png,Wagyu,0.3788411317270567,0.9780998817214211,0.9999924768367389
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu64.png,Wagyu64.png,Wagyu64.png,Wagyu,0.3788411317270567,0.9780998817214211,0.9999924768367389
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu65.png,Wagyu65.png,Wagyu65.png,Wagyu,0.37254756591458194,0.9330543736397474,0.9998184659826883
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu65.png,Wagyu65.png,Wagyu65.png,Wagyu,0.37254756591458194,0.9330543736397474,0.9998184659826883
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu66.png,Wagyu66.png,Wagyu66.png,Wagyu,0.32081156267082933,0.9631475152360965,0.9999678624639233
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu66.png,Wagyu66.png,Wagyu66.png,Wagyu,0.32081156267082933,0.9631475152360965,0.9999678624639233
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu67.png,Wagyu67.png,Wagyu67.png,Wagyu,0.26916244879839984,0.96423454960587,0.9998055418623825
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu67.png,Wagyu67.png,Wagyu67.png,Wagyu,0.26916244879839984,0.96423454960587,0.9998055418623825
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu68.png,Wagyu68.png,Wagyu68.png,Wagyu,0.19340729226645564,0.8798361080136844,0.9689580049559346
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu68.png,Wagyu68.png,Wagyu68.png,Wagyu,0.19340729226645564,0.8798361080136844,0.9689580049559346
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu69.png,Wagyu69.png,Wagyu69.png,Wagyu,0.25501249978959367,0.8674594301658183,0.9952610468713307
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu69.png,Wagyu69.png,Wagyu69.png,Wagyu,0.25501249978959367,0.8674594301658183,0.9952610468713307
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu7.png,Wagyu7.png,Wagyu7.png,Wagyu,0.2196557961238207,0.9585212536219531,0.9987120135473666
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu7.png,Wagyu7.png,Wagyu7.png,Wagyu,0.2196557961238207,0.9585212536219531,0.9987120135473666
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu70.png,Wagyu70.png,Wagyu70.png,Wagyu,0.3223053453287789,0.9262215951511332,0.9997320979564703
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu70.png,Wagyu70.png,Wagyu70.png,Wagyu,0.3223053453287789,0.9262215951511332,0.9997320979564703
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu71.png,Wagyu71.png,Wagyu71.png,Wagyu,0.2956471674213743,0.9358282504324362,0.9998212535485281
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu71.png,Wagyu71.png,Wagyu71.png,Wagyu,0.2956471674213743,0.9358282504324362,0.9998212535485281
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu72.png,Wagyu72.png,Wagyu72.png,Wagyu,0.23449337378516066,0.9080305696382885,0.9993241950775543
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu72.png,Wagyu72.png,Wagyu72.png,Wagyu,0.23449337378516066,0.9080305696382885,0.9993241950775543
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu73.png,Wagyu73.png,Wagyu73.png,Wagyu,0.2783651509288656,0.9166482843473529,0.9987746370879163
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu73.png,Wagyu73.png,Wagyu73.png,Wagyu,0.2783651509288656,0.9166482843473529,0.9987746370879163
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu74.png,Wagyu74.png,Wagyu74.png,Wagyu,0.2680697203299411,0.8824737689022327,0.9986150262726298
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu74.png,Wagyu74.png,Wagyu74.png,Wagyu,0.2680697203299411,0.8824737689022327,0.9986150262726298
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu75.png,Wagyu75.png,Wagyu75.png,Wagyu,0.3813058227517191,0.7729053664395692,0.735149288684371
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu75.png,Wagyu75.png,Wagyu75.png,Wagyu,0.3813058227517191,0.7729053664395692,0.735149288684371
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu76.png,Wagyu76.png,Wagyu76.png,Wagyu,0.2644453438235381,0.9449641014404728,0.9997747509025036
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu76.png,Wagyu76.png,Wagyu76.png,Wagyu,0.2644453438235381,0.9449641014404728,0.9997747509025036
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu77.png,Wagyu77.png,Wagyu77.png,Wagyu,0.3861806522723207,0.9730752310789146,0.9999800744267668
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu77.png,Wagyu77.png,Wagyu77.png,Wagyu,0.3861806522723207,0.9730752310789146,0.9999800744267668
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu78.png,Wagyu78.png,Wagyu78.png,Wagyu,0.2808706562784265,0.9098480331399588,0.999712131445547
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu78.png,Wagyu78.png,Wagyu78.png,Wagyu,0.2808706562784265,0.9098480331399588,0.999712131445547
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu79.png,Wagyu79.png,Wagyu79.png,Wagyu,0.35485953103550266,0.9642287876483127,0.9999814940896342
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu79.png,Wagyu79.png,Wagyu79.png,Wagyu,0.35485953103550266,0.9642287876483127,0.9999814940896342
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu8.png,Wagyu8.png,Wagyu8.png,Wagyu,0.27483476206165464,0.9045558979419411,0.998690207952603
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu8.png,Wagyu8.png,Wagyu8.png,Wagyu,0.27483476206165464,0.9045558979419411,0.998690207952603
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu80.png,Wagyu80.png,Wagyu80.png,Wagyu,0.3813383158938868,0.9276596688939056,0.9999450297187641
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu80.png,Wagyu80.png,Wagyu80.png,Wagyu,0.3813383158938868,0.9276596688939056,0.9999450297187641
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu81.png,Wagyu81.png,Wagyu81.png,Wagyu,0.4729948044284026,0.985075855483236,0.9999992689549901
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu81.png,Wagyu81.png,Wagyu81.png,Wagyu,0.4729948044284026,0.985075855483236,0.9999992689549901
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu82.png,Wagyu82.png,Wagyu82.png,Wagyu,0.29529750615158995,0.9249508393255851,0.9995529166779414
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu82.png,Wagyu82.png,Wagyu82.png,Wagyu,0.29529750615158995,0.9249508393255851,0.9995529166779414
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu83.png,Wagyu83.png,Wagyu83.png,Wagyu,0.421741412022867,0.9306488658633483,0.9999903761275752
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu83.png,Wagyu83.png,Wagyu83.png,Wagyu,0.421741412022867,0.9306488658633483,0.9999903761275752
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu84.png,Wagyu84.png,Wagyu84.png,Wagyu,0.24290121242124893,0.7796906135934398,0.979422447208234
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu84.png,Wagyu84.png,Wagyu84.png,Wagyu,0.24290121242124893,0.7796906135934398,0.979422447208234
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu85.png,Wagyu85.png,Wagyu85.png,Wagyu,0.22024341741005912,0.8978462303870551,0.9982673114022292
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu85.png,Wagyu85.png,Wagyu85.png,Wagyu,0.22024341741005912,0.8978462303870551,0.9982673114022292
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu86.png,Wagyu86.png,Wagyu86.png,Wagyu,0.28801246127253094,0.941880389237266,0.9999046624165215
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu86.png,Wagyu86.png,Wagyu86.png,Wagyu,0.28801246127253094,0.941880389237266,0.9999046624165215
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu87.png,Wagyu87.png,Wagyu87.png,Wagyu,0.2916964867714698,0.9442039857951838,0.9997760376309145
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu87.png,Wagyu87.png,Wagyu87.png,Wagyu,0.2916964867714698,0.9442039857951838,0.9997760376309145
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu88.png,Wagyu88.png,Wagyu88.png,Wagyu,0.4061754683187778,0.8055195381533989,0.9087344640924294
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu88.png,Wagyu88.png,Wagyu88.png,Wagyu,0.4061754683187778,0.8055195381533989,0.9087344640924294
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu89.png,Wagyu89.png,Wagyu89.png,Wagyu,0.2723465079524535,0.8636670750035226,0.9978845891853881
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu89.png,Wagyu89.png,Wagyu89.png,Wagyu,0.2723465079524535,0.8636670750035226,0.9978845891853881
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu9.png,Wagyu9.png,Wagyu9.png,Wagyu,0.3008859859586327,0.8832706889803512,0.9165602806534602
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu9.png,Wagyu9.png,Wagyu9.png,Wagyu,0.3008859859586327,0.8832706889803512,0.9165602806534602
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu90.png,Wagyu90.png,Wagyu90.png,Wagyu,0.3314546348020239,0.7895601100449193,0.8232799949213717
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu90.png,Wagyu90.png,Wagyu90.png,Wagyu,0.3314546348020239,0.7895601100449193,0.8232799949213717
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu91.png,Wagyu91.png,Wagyu91.png,Wagyu,0.28771817159252217,0.949205001493428,0.9997152583684356
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu91.png,Wagyu91.png,Wagyu91.png,Wagyu,0.28771817159252217,0.949205001493428,0.9997152583684356
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu92.png,Wagyu92.png,Wagyu92.png,Wagyu,0.26847524572662285,0.9380193959103958,0.9992707992715975
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu92.png,Wagyu92.png,Wagyu92.png,Wagyu,0.26847524572662285,0.9380193959103958,0.9992707992715975
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu93.png,Wagyu93.png,Wagyu93.png,Wagyu,0.376723922373194,0.9140722939902014,0.99992053152484
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu93.png,Wagyu93.png,Wagyu93.png,Wagyu,0.376723922373194,0.9140722939902014,0.99992053152484
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu94.png,Wagyu94.png,Wagyu94.png,Wagyu,0.36752623230369696,0.9628440720794036,0.9999641704214747
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu94.png,Wagyu94.png,Wagyu94.png,Wagyu,0.36752623230369696,0.9628440720794036,0.9999641704214747
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu95.png,Wagyu95.png,Wagyu95.png,Wagyu,0.27637059053247537,0.9399821755499801,0.9987703142356228
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu95.png,Wagyu95.png,Wagyu95.png,Wagyu,0.27637059053247537,0.9399821755499801,0.9987703142356228
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu96.png,Wagyu96.png,Wagyu96.png,Wagyu,0.29041169095813785,0.9344197332963675,0.9931112672477295
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu96.png,Wagyu96.png,Wagyu96.png,Wagyu,0.29041169095813785,0.9344197332963675,0.9931112672477295
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu97.png,Wagyu97.png,Wagyu97.png,Wagyu,0.2786203681805133,0.9709819274506497,0.9999463218019438
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu97.png,Wagyu97.png,Wagyu97.png,Wagyu,0.2786203681805133,0.9709819274506497,0.9999463218019438
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu98.png,Wagyu98.png,Wagyu98.png,Wagyu,0.33387979277428015,0.9119546928939418,0.9998779474493161
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu98.png,Wagyu98.png,Wagyu98.png,Wagyu,0.33387979277428015,0.9119546928939418,0.9998779474493161
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu99.png,Wagyu99.png,Wagyu99.png,Wagyu,0.3288935856724039,0.9766178399738068,0.9999356816049346
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\Wagyu99.png,Wagyu99.png,Wagyu99.png,Wagyu,0.3288935856724039,0.9766178399738068,0.9999356816049346
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (1).jpg,choice (1).jpg,choice (1).jpg,Choice,0.450187398592364,0.6509979111050873,0.6869733549554885
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (1).jpg,choice (1).jpg,choice (1).jpg,Choice,0.450187398592364,0.6509979111050873,0.6869733549554885
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (1).png,choice (1).png,choice (1).png,Choice,0.15127822822958603,0.5284207318812743,0.5037021895511292
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (1).png,choice (1).png,choice (1).png,Choice,0.15127822822958603,0.5284207318812743,0.5037021895511292
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (2).jpg,choice (2).jpg,choice (2).jpg,Choice,0.4484836303852255,0.6646406342061816,0.7130602713238684
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (2).jpg,choice (2).jpg,choice (2).jpg,Choice,0.4484836303852255,0.6646406342061816,0.7130602713238684
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (2).png,choice (2).png,choice (2).png,Choice,0.47637082194339675,0.5158521217699439,0.570122633141089
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (2).png,choice (2).png,choice (2).png,Choice,0.47637082194339675,0.5158521217699439,0.570122633141089
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (3).jpg,choice (3).jpg,choice (3).jpg,Choice,0.4676275791852622,0.5978199274985474,0.5767195920449322
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (3).jpg,choice (3).jpg,choice (3).jpg,Choice,0.4676275791852622,0.5978199274985474,0.5767195920449322
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (3).png,choice (3).png,choice (3).png,Choice,0.10935337333136226,0.5376371288551427,0.4667607965860841
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (3).png,choice (3).png,choice (3).png,Choice,0.10935337333136226,0.5376371288551427,0.4667607965860841
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (4).jpg,choice (4).jpg,choice (4).jpg,Choice,0.3976600140144715,0.4222401602854032,0.22147820290634102
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (4).jpg,choice (4).jpg,choice (4).jpg,Choice,0.3976600140144715,0.4222401602854032,0.22147820290634102
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (4).png,choice (4).png,choice (4).png,Choice,0.1016240177491384,0.6739168159131477,0.5568074619772772
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (4).png,choice (4).png,choice (4).png,Choice,0.1016240177491384,0.6739168159131477,0.5568074619772772
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (5).png,choice (5).png,choice (5).png,Choice,0.1248567440482957,0.6718314092595802,0.6045269488326072
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (5).png,choice (5).png,choice (5).png,Choice,0.1248567440482957,0.6718314092595802,0.6045269488326072
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (6).png,choice (6).png,choice (6).png,Choice,0.11398312593978036,0.6304912775422451,0.553720457772937
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (6).png,choice (6).png,choice (6).png,Choice,0.11398312593978036,0.6304912775422451,0.553720457772937
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (7).png,choice (7).png,choice (7).png,Choice,0.18334135337696764,0.5975353370360171,0.5387701734611391
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (7).png,choice (7).png,choice (7).png,Choice,0.18334135337696764,0.5975353370360171,0.5387701734611391
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (8).png,choice (8).png,choice (8).png,Choice,0.23912009107900267,0.4803971043216296,0.49153488441351606
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (8).png,choice (8).png,choice (8).png,Choice,0.23912009107900267,0.4803971043216296,0.49153488441351606
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (9).png,choice (9).png,choice (9).png,Choice,0.15608708561435408,0.6384741338293093,0.5263139785361132
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (9).png,choice (9).png,choice (9).png,Choice,0.15608708561435408,0.6384741338293093,0.5263139785361132
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (american).jpg,choice (american).jpg,choice (american).jpg,Choice,0.3585326423453018,0.3655927966860982,0.5259575204302153
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice (american).jpg,choice (american).jpg,choice (american).jpg,Choice,0.3585326423453018,0.3655927966860982,0.5259575204302153
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice.jpg,choice.jpg,choice.jpg,Choice,0.5464959532050109,0.3428729481236735,0.3429470241502665
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\choice.jpg,choice.jpg,choice.jpg,Choice,0.5464959532050109,0.3428729481236735,0.3429470241502665
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (1).jpg,prime (1).jpg,prime (1).jpg,Prime,0.417046368956589,0.6806219638551897,0.7276575074346501
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (1).jpg,prime (1).jpg,prime (1).jpg,Prime,0.417046368956589,0.6806219638551897,0.7276575074346501
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (1).png,prime (1).png,prime (1).png,Prime,0.24999711583587936,0.6094765475175434,0.6475128680543915
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (1).png,prime (1).png,prime (1).png,Prime,0.24999711583587936,0.6094765475175434,0.6475128680543915
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (10).png,prime (10).png,prime (10).png,Prime,0.28833829438167696,0.5842142602085082,0.6492504090987375
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (10).png,prime (10).png,prime (10).png,Prime,0.28833829438167696,0.5842142602085082,0.6492504090987375
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (11).png,prime (11).png,prime (11).png,Prime,0.3669784759302311,0.4766397425024381,0.6013879580313519
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (11).png,prime (11).png,prime (11).png,Prime,0.3669784759302311,0.4766397425024381,0.6013879580313519
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (12).png,prime (12).png,prime (12).png,Prime,0.2153265685325859,0.8062791195672014,0.9238344710218441
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (12).png,prime (12).png,prime (12).png,Prime,0.2153265685325859,0.8062791195672014,0.9238344710218441
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (13).png,prime (13).png,prime (13).png,Prime,0.370383178987127,0.5069869853468534,0.5010504360863438
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (13).png,prime (13).png,prime (13).png,Prime,0.370383178987127,0.5069869853468534,0.5010504360863438
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (14).png,prime (14).png,prime (14).png,Prime,0.4118522102830168,0.31961308845524444,0.6308270538820354
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (14).png,prime (14).png,prime (14).png,Prime,0.4118522102830168,0.31961308845524444,0.6308270538820354
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (15).png,prime (15).png,prime (15).png,Prime,0.39031762597458153,0.3693759634846207,0.5678214681538347
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (15).png,prime (15).png,prime (15).png,Prime,0.39031762597458153,0.3693759634846207,0.5678214681538347
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (16).png,prime (16).png,prime (16).png,Prime,0.38871378464363876,0.3607243302894353,0.5648716559102028
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (16).png,prime (16).png,prime (16).png,Prime,0.38871378464363876,0.3607243302894353,0.5648716559102028
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (17).png,prime (17).png,prime (17).png,Prime,0.3717213337906785,0.3878418408093838,0.6040629848530434
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (17).png,prime (17).png,prime (17).png,Prime,0.3717213337906785,0.3878418408093838,0.6040629848530434
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (18).png,prime (18).png,prime (18).png,Prime,0.2384315962719755,0.5833966943813429,0.5528750725010309
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (18).png,prime (18).png,prime (18).png,Prime,0.2384315962719755,0.5833966943813429,0.5528750725010309
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (19).png,prime (19).png,prime (19).png,Prime,0.375949244962373,0.4646627660818708,0.5505648906430988
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (19).png,prime (19).png,prime (19).png,Prime,0.375949244962373,0.4646627660818708,0.5505648906430988
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (2).jpg,prime (2).jpg,prime (2).jpg,Prime,0.40184867784699246,0.5024287129285231,0.5808483596404432
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (2).jpg,prime (2).jpg,prime (2).jpg,Prime,0.40184867784699246,0.5024287129285231,0.5808483596404432
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (2).png,prime (2).png,prime (2).png,Prime,0.2792640730776528,0.5228916989861292,0.5380428652817489
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (2).png,prime (2).png,prime (2).png,Prime,0.2792640730776528,0.5228916989861292,0.5380428652817489
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (20).png,prime (20).png,prime (20).png,Prime,0.35689399215494927,0.4437400245901975,0.6065130631550398
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (20).png,prime (20).png,prime (20).png,Prime,0.35689399215494927,0.4437400245901975,0.6065130631550398
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (3).jpg,prime (3).jpg,prime (3).jpg,Prime,0.42566127039743895,0.40485249299846165,0.5552807127247991
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (3).jpg,prime (3).jpg,prime (3).jpg,Prime,0.42566127039743895,0.40485249299846165,0.5552807127247991
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (3).png,prime (3).png,prime (3).png,Prime,0.44860669692020616,0.6155929801025943,0.6199793333875968
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (3).png,prime (3).png,prime (3).png,Prime,0.44860669692020616,0.6155929801025943,0.6199793333875968
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (4).jpg,prime (4).jpg,prime (4).jpg,Prime,0.3537742606833476,0.4934101215267707,0.6082167673278427
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (4).jpg,prime (4).jpg,prime (4).jpg,Prime,0.3537742606833476,0.4934101215267707,0.6082167673278427
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (4).png,prime (4).png,prime (4).png,Prime,0.42261664390752907,0.6149777361085824,0.5667765436335158
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (4).png,prime (4).png,prime (4).png,Prime,0.42261664390752907,0.6149777361085824,0.5667765436335158
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (5).png,prime (5).png,prime (5).png,Prime,0.47854682895669604,0.5768928081894183,0.6467113525859981
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (5).png,prime (5).png,prime (5).png,Prime,0.47854682895669604,0.5768928081894183,0.6467113525859981
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (6).png,prime (6).png,prime (6).png,Prime,0.44867253123570927,0.5722159491990023,0.49200267829061756
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (6).png,prime (6).png,prime (6).png,Prime,0.44867253123570927,0.5722159491990023,0.49200267829061756
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (7).png,prime (7).png,prime (7).png,Prime,0.445005139479705,0.601701603138117,0.5838340504121295
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (7).png,prime (7).png,prime (7).png,Prime,0.445005139479705,0.601701603138117,0.5838340504121295
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (8).png,prime (8).png,prime (8).png,Prime,0.42195476048416847,0.7030591314830211,0.7527460621809863
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (8).png,prime (8).png,prime (8).png,Prime,0.42195476048416847,0.7030591314830211,0.7527460621809863
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (9).png,prime (9).png,prime (9).png,Prime,0.3497511369734522,0.283538813813694,0.31908980543831683
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime (9).png,prime (9).png,prime (9).png,Prime,0.3497511369734522,0.283538813813694,0.31908980543831683
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime.jpg,prime.jpg,prime.jpg,Prime,0.40766795413341766,0.4382413608740143,0.45311370708357607
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime.jpg,prime.jpg,prime.jpg,Prime,0.40766795413341766,0.4382413608740143,0.45311370708357607
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime2.png,prime2.png,prime2.png,Prime,0.3798658225713612,0.43340217579030293,0.3513287120237645
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\prime2.png,prime2.png,prime2.png,Prime,0.3798658225713612,0.43340217579030293,0.3513287120237645
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select (1).jpg,select (1).jpg,select (1).jpg,Select,0.4124190179951206,0.2908723069034196,0.36473762584513886
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select (1).jpg,select (1).jpg,select (1).jpg,Select,0.4124190179951206,0.2908723069034196,0.36473762584513886
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select (1).png,select (1).png,select (1).png,Select,0.10061633368621442,0.4840806959254343,0.07055037577943662
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select (1).png,select (1).png,select (1).png,Select,0.10061633368621442,0.4840806959254343,0.07055037577943662
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select (2).png,select (2).png,select (2).png,Select,0.475001259055172,0.6595100412171507,0.6006055069958203
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select (2).png,select (2).png,select (2).png,Select,0.475001259055172,0.6595100412171507,0.6006055069958203
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select (3).png,select (3).png,select (3).png,Select,0.11430529662252234,0.0969852028131277,0.16908593406581965
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select (3).png,select (3).png,select (3).png,Select,0.11430529662252234,0.0969852028131277,0.16908593406581965
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select1.jpeg,select1.jpeg,select1.jpeg,Select,0.46784807888573177,0.4631646395602802,0.09378479956085606
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select1.jpeg,select1.jpeg,select1.jpeg,Select,0.46784807888573177,0.4631646395602802,0.09378479956085606
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select1.jpg,select1.jpg,select1.jpg,Select,0.5380418581207401,0.010311055163767785,0.16932843532199895
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select1.jpg,select1.jpg,select1.jpg,Select,0.5380418581207401,0.010311055163767785,0.16932843532199895
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select6.png,select6.png,select6.png,Select,0.637903370227385,0.0,0.00015050214247960415
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select6.png,select6.png,select6.png,Select,0.637903370227385,0.0,0.00015050214247960415
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select7.png,select7.png,select7.png,Select,0.43229357072443675,0.2935581680816471,0.2568535714746344
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\select7.png,select7.png,select7.png,Select,0.43229357072443675,0.2935581680816471,0.2568535714746344
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu (clean).jpg,wagyu (clean).jpg,wagyu (clean).jpg,Wagyu,0.5482278527120262,0.5926586597511927,0.8657613338579265
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu (clean).jpg,wagyu (clean).jpg,wagyu (clean).jpg,Wagyu,0.5482278527120262,0.5926586597511927,0.8657613338579265
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063453895.jpg,wagyu_PXL_20250908_063453895.jpg,wagyu_PXL_20250908_063453895.jpg,Wagyu,0.28801506039726776,0.6094551185407882,0.7697652520455579
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063453895.jpg,wagyu_PXL_20250908_063453895.jpg,wagyu_PXL_20250908_063453895.jpg,Wagyu,0.28801506039726776,0.6094551185407882,0.7697652520455579
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063505201.jpg,wagyu_PXL_20250908_063505201.jpg,wagyu_PXL_20250908_063505201.jpg,Wagyu,0.3242332896702055,0.6369888450613556,0.7445838554350604
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063505201.jpg,wagyu_PXL_20250908_063505201.jpg,wagyu_PXL_20250908_063505201.jpg,Wagyu,0.3242332896702055,0.6369888450613556,0.7445838554350604
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063540486.jpg,wagyu_PXL_20250908_063540486.jpg,wagyu_PXL_20250908_063540486.jpg,Wagyu,0.3209412526117224,0.956427910894178,0.9999999984823682
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063540486.jpg,wagyu_PXL_20250908_063540486.jpg,wagyu_PXL_20250908_063540486.jpg,Wagyu,0.3209412526117224,0.956427910894178,0.9999999984823682
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063542546.jpg,wagyu_PXL_20250908_063542546.jpg,wagyu_PXL_20250908_063542546.jpg,Wagyu,0.2876636455042071,0.9667894329280236,0.9999999974887149
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063542546.jpg,wagyu_PXL_20250908_063542546.jpg,wagyu_PXL_20250908_063542546.jpg,Wagyu,0.2876636455042071,0.9667894329280236,0.9999999974887149
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063544561.jpg,wagyu_PXL_20250908_063544561.jpg,wagyu_PXL_20250908_063544561.jpg,Wagyu,0.2936229033342772,0.9887333434775528,0.9999999999686328
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063544561.jpg,wagyu_PXL_20250908_063544561.jpg,wagyu_PXL_20250908_063544561.jpg,Wagyu,0.2936229033342772,0.9887333434775528,0.9999999999686328
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063547783.jpg,wagyu_PXL_20250908_063547783.jpg,wagyu_PXL_20250908_063547783.jpg,Wagyu,0.295169599719252,0.9706823064777433,0.9999999997233721
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063547783.jpg,wagyu_PXL_20250908_063547783.jpg,wagyu_PXL_20250908_063547783.jpg,Wagyu,0.295169599719252,0.9706823064777433,0.9999999997233721
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063601417.jpg,wagyu_PXL_20250908_063601417.jpg,wagyu_PXL_20250908_063601417.jpg,Wagyu,0.29773700893229804,0.9521355913299848,0.9999999910386003
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063601417.jpg,wagyu_PXL_20250908_063601417.jpg,wagyu_PXL_20250908_063601417.jpg,Wagyu,0.29773700893229804,0.9521355913299848,0.9999999910386003
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063840425.jpg,wagyu_PXL_20250908_063840425.jpg,wagyu_PXL_20250908_063840425.jpg,Wagyu,0.3731797071521893,0.8723239782452757,0.999963439812364
+C:\Users\pen253\OneDrive - CSIRO\2022\Bytes for Bites Hackathon\Python-Marbling\images\wagyu_PXL_20250908_063840425.jpg,wagyu_PXL_20250908_063840425.jpg,wagyu_PXL_20250908_063840425.jpg,Wagyu,0.3731797071521893,0.8723239782452757,0.999963439812364

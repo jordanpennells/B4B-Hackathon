@@ -1,0 +1,133 @@
+{
+  "handcrafted": {
+    "formula": "MI = w1*norm(fat) + w2*(1 - norm(orientation_dispersion)) + w3*norm(lacunarity_mean)",
+    "weights": {
+      "w1": 0.6000000000000001,
+      "w2": 0.30000000000000004,
+      "w3": 0.10000000000000002
+    },
+    "fat_feature": "fat_within_steak_pct",
+    "normalisers": {
+      "fat_within_steak_pct": "min-max (fit on this dataset)",
+      "orientation_dispersion": "min-max (fit on this dataset)",
+      "lacunarity_mean": "min-max (fit on this dataset)"
+    }
+  },
+  "features_used_for_models": [
+    "fat_within_steak_pct",
+    "area_pct",
+    "steak_coverage_pct",
+    "n_flecks",
+    "mean_fleck_area",
+    "median_fleck_area",
+    "fleck_solidity",
+    "glcm_contrast",
+    "glcm_correlation",
+    "glcm_energy",
+    "glcm_homogeneity",
+    "orientation_dispersion",
+    "orientation_anisotropy",
+    "lacunarity_mean",
+    "lacunarity_slope"
+  ],
+  "all_features_flag": false,
+  "lda": {
+    "note": "Coefficients are in standardized feature space (after median-impute + StandardScaler). MI_lda is min-max normalised LDA score.",
+    "coef_standardized": {
+      "fat_within_steak_pct": 0.17277112545073633,
+      "area_pct": -0.323602318201361,
+      "steak_coverage_pct": 0.8883191822149462,
+      "n_flecks": 0.06585138521192685,
+      "mean_fleck_area": 0.31531725337612604,
+      "median_fleck_area": -0.38512632385927403,
+      "fleck_solidity": 0.223197153317024,
+      "glcm_contrast": 2.591656414960499,
+      "glcm_correlation": 3.980393617780991,
+      "glcm_energy": 0.08158014170844848,
+      "glcm_homogeneity": -0.0056257933698460535,
+      "orientation_dispersion": -0.08376304092927021,
+      "orientation_anisotropy": 0.08376304092925581,
+      "lacunarity_mean": -0.07925557913005042,
+      "lacunarity_slope": -0.36297497659493005
+    }
+  },
+  "logistic": {
+    "note": "Multinomial LR on standardized features. MI_logit = expected class rank under predicted probabilities, normalized to [0,1].",
+    "coef_per_class_standardized": {
+      "Select": {
+        "fat_within_steak_pct": 0.2992315631361382,
+        "area_pct": -0.2144541401738062,
+        "steak_coverage_pct": 0.14068579683627225,
+        "n_flecks": -0.08554956287647403,
+        "mean_fleck_area": 0.16128935073718548,
+        "median_fleck_area": 0.5955686560071711,
+        "fleck_solidity": -0.7233282395376247,
+        "glcm_contrast": 0.049862981558505916,
+        "glcm_correlation": -1.9386715797642136,
+        "glcm_energy": 0.8244693617072768,
+        "glcm_homogeneity": 0.8368962014760319,
+        "orientation_dispersion": -0.26973914929167336,
+        "orientation_anisotropy": 0.2697391492917307,
+        "lacunarity_mean": 0.8424375430519913,
+        "lacunarity_slope": 1.1139074740518673
+      },
+      "Choice": {
+        "fat_within_steak_pct": -0.13495060598729244,
+        "area_pct": -0.6298530965849196,
+        "steak_coverage_pct": 0.47518268328187463,
+        "n_flecks": -0.8426364904240199,
+        "mean_fleck_area": -0.20444852225255736,
+        "median_fleck_area": 0.43012925542015734,
+        "fleck_solidity": 0.23892468339484763,
+        "glcm_contrast": -0.25937985922646195,
+        "glcm_correlation": -0.38901820935212833,
+        "glcm_energy": -0.2366674895006897,
+        "glcm_homogeneity": -0.15927615789464739,
+        "orientation_dispersion": 0.3562454156782755,
+        "orientation_anisotropy": -0.3562454156782985,
+        "lacunarity_mean": -0.20418612415399146,
+        "lacunarity_slope": -0.08529446450001946
+      },
+      "Prime": {
+        "fat_within_steak_pct": 0.4296071705983607,
+        "area_pct": -0.501056809468895,
+        "steak_coverage_pct": -1.50244979746481,
+        "n_flecks": -0.6159421485979699,
+        "mean_fleck_area": -0.4734324605115868,
+        "median_fleck_area": -0.6274669536111623,
+        "fleck_solidity": -0.4343009952165755,
+        "glcm_contrast": 0.4545309626677005,
+        "glcm_correlation": 0.46878312146806156,
+        "glcm_energy": 0.10686790741598393,
+        "glcm_homogeneity": -0.8548999752998184,
+        "orientation_dispersion": 0.5407247335584167,
+        "orientation_anisotropy": -0.5407247335583011,
+        "lacunarity_mean": -1.3288011653687561,
+        "lacunarity_slope": -0.59174768579341
+      },
+      "Wagyu": {
+        "fat_within_steak_pct": -0.5938881277472061,
+        "area_pct": 1.3453640462276193,
+        "steak_coverage_pct": 0.8865813173466576,
+        "n_flecks": 1.5441282018984641,
+        "mean_fleck_area": 0.5165916320269557,
+        "median_fleck_area": -0.39823095781616685,
+        "fleck_solidity": 0.9187045513593542,
+        "glcm_contrast": -0.24501408499974578,
+        "glcm_correlation": 1.8589066676482808,
+        "glcm_energy": -0.6946697796225715,
+        "glcm_homogeneity": 0.17727993171843345,
+        "orientation_dispersion": -0.627230999945022,
+        "orientation_anisotropy": 0.6272309999448714,
+        "lacunarity_mean": 0.6905497464707586,
+        "lacunarity_slope": -0.4368653237584361
+      }
+    },
+    "intercept_per_class": {
+      "Select": -2.9472955643154735,
+      "Choice": 0.3022681902626377,
+      "Prime": -1.5159283397815317,
+      "Wagyu": 4.160955713834363
+    }
+  }
+}
