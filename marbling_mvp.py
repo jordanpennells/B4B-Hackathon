@@ -29,8 +29,9 @@ CFG = dict(
 )
 
 # Optional alias keywords → grades (extend as you like)
+# NOTE: Wagyu is now its own class, not mapped to Prime.
 LABEL_ALIASES = {
-    "wagyu": "Prime",
+    "wagyu": "Wagyu",
     # "angus": "Choice",     # uncomment if you want this behaviour
 }
 # ------------------------------------------------------------------------------
@@ -48,9 +49,10 @@ def infer_label_from_name(name: str):
     norm = _norm_letters(name)
 
     # direct grade words
-    if "prime" in raw:   return "Prime", "filename:prime"
-    if "choice" in raw:  return "Choice", "filename:choice"
-    if "select" in raw:  return "Select", "filename:select"
+    if "wagyu" in raw:  return "Wagyu", "filename:wagyu"
+    if "prime" in raw:  return "Prime", "filename:prime"
+    if "choice" in raw: return "Choice", "filename:choice"
+    if "select" in raw: return "Select", "filename:select"
 
     # alias keywords
     for k, v in LABEL_ALIASES.items():
@@ -66,15 +68,15 @@ def infer_label_from_name(name: str):
         if t in norm: return "Select", f"filename:{t}"
 
     # USDA prefixes (e.g., usdaprime)
-    if "usdaprime" in norm:   return "Prime", "filename:usdaprime"
-    if "usdachoice" in norm:  return "Choice", "filename:usdachoice"
-    if "usdaselect" in norm:  return "Select", "filename:usdaselect"
+    if "usdaprime"  in norm: return "Prime",  "filename:usdaprime"
+    if "usdachoice" in norm: return "Choice", "filename:usdachoice"
+    if "usdaselect" in norm: return "Select", "filename:usdaselect"
 
     return "unknown", "filename:none"
 
 def infer_label(path: str):
     parent = os.path.basename(os.path.dirname(path)).lower()
-    if parent in {"prime","choice","select"}:
+    if parent in {"wagyu","prime","choice","select"}:
         return parent.title(), "folder"
     return infer_label_from_name(os.path.basename(path))
 
@@ -216,7 +218,7 @@ def collect_image_paths(root_dir, exts=("*.png","*.jpg","*.jpeg","*.PNG","*.JPG"
         paths += glob.glob(os.path.join(root_dir, ext))
     # under subfolders
     for label_dir in sorted(glob.glob(os.path.join(root_dir, "*"))):
-        if not os.path.isdir(label_dir): 
+        if not os.path.isdir(label_dir):
             continue
         for ext in exts:
             paths += glob.glob(os.path.join(label_dir, ext))
@@ -309,8 +311,8 @@ def main():
     ap.add_argument("--images", nargs="+", help="List of image paths")
     ap.add_argument("--dir", type=str, help="Folder with images and/or subfolders")
     ap.add_argument("--viz", action="store_true", help="Show quick segmentation figures (caps at 6)")
-    ap.add_argument("--label", type=str, help="Only process this label (Prime/Choice/Select)")
-    ap.add_argument("--pattern", type=str, default="*", help="Filename glob, e.g. *Prime*.png")
+    ap.add_argument("--label", type=str, help="Only process this label (Wagyu/Prime/Choice/Select)")
+    ap.add_argument("--pattern", type=str, default="*", help="Filename glob, e.g. *Wagyu*.png")
     ap.add_argument("--limit", type=int, default=0, help="Limit total images (0 = all)")
     ap.add_argument("--shuffle", action="store_true", help="Shuffle before limiting")
     ap.add_argument("--check", action="store_true", help="Audit inferred labels only (no feature extraction)")

@@ -179,13 +179,16 @@ df = load_csv(csv_path)
 # -------------------- Title & Persistent View Switch --------------------
 st.title("AI Marbling Grader – Dashboard")
 
+# Default to Guided Walkthrough on first load
 if "active_view" not in st.session_state:
-    st.session_state.active_view = "🖼️ Gallery & QA"
+    st.session_state.active_view = "🧭 Guided Walkthrough"
+
+view_options = ["🧭 Guided Walkthrough", "🖼️ Gallery & QA"]
 
 view = st.radio(
     "View",
-    ["🖼️ Gallery & QA", "🧭 Guided Walkthrough"],
-    index=0 if st.session_state.active_view == "🖼️ Gallery & QA" else 1,
+    view_options,
+    index=view_options.index(st.session_state.active_view),
     horizontal=True,
     key="active_view",
     help="Choose the dashboard view. This selection persists when the app reruns."
