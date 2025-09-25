@@ -12,10 +12,12 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import ExtraTreesClassifier, RandomForestClassifier
 from sklearn.calibration import CalibratedClassifierCV
 import matplotlib.pyplot as plt
 import joblib
+
+from mi_features import append_mi_feature, export_mi_params, fit_mi_params
 
 NON_FEATURE_COLS = {"image","label","label_source","path","relpath"}
 SEED = 42
@@ -49,11 +51,20 @@ def load_data(path):
 
     print(f"Training will use fat metric: {used_fat_col}")
 
+    # Add Marbling Index feature + components
+    mi_params = fit_mi_params(df)
+    df = append_mi_feature(df, mi_params, include_components=True)
+    print(
+        "Added MI feature using {} (weights={} | bounds={})".format(
+            mi_params.get("fat_feature"), mi_params.get("weights"), mi_params.get("bounds")
+        )
+    )
+
     # feature matrix
     feat_cols = [c for c in df.columns if c not in NON_FEATURE_COLS]
     X = df[feat_cols].values
     y = df["label"].values
-    return df, X, y, feat_cols
+    return df, X, y, feat_cols, mi_params
 
 def model_candidates():
     # class_weight='balanced' helps with class imbalance
@@ -68,7 +79,17 @@ def model_candidates():
             n_estimators=600, max_features="sqrt", min_samples_leaf=2,
             class_weight="balanced_subsample", random_state=SEED))
     ])
-    return {"logreg": logreg, "rf": rf}
+    extra = Pipeline([
+        ("impute", SimpleImputer(strategy="median")),
+        ("clf", ExtraTreesClassifier(
+            n_estimators=800,
+            max_features="sqrt",
+            min_samples_leaf=2,
+            class_weight="balanced",
+            random_state=SEED,
+        )),
+    ])
+    return {"logreg": logreg, "rf": rf, "extratrees": extra}
 
 def evaluate_cv(models, X, y, n_splits=5):
     skf = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=SEED)
@@ -98,7 +119,7 @@ def main():
     ap.add_argument("--features", type=str, default="features.csv")
     args = ap.parse_args()
 
-    df, X, y, feat_cols = load_data(args.features)
+    df, X, y, feat_cols, mi_params = load_data(args.features)
 
     # --- dataset checks & CV folds ---
     if len(df) == 0:
@@ -141,12 +162,13 @@ def main():
 
     # Save feature importance before calibration
     try:
-        if "rf" in best_name:
-            rf = base_model.named_steps["clf"]
-            imp = rf.feature_importances_
-        else:
-            clf = base_model.named_steps["clf"]
+        clf = base_model.named_steps["clf"]
+        if hasattr(clf, "feature_importances_"):
+            imp = clf.feature_importances_
+        elif hasattr(clf, "coef_"):
             imp = np.mean(np.abs(clf.coef_), axis=0)
+        else:
+            raise AttributeError("Estimator does not expose feature importances or coefficients")
         imp_df = pd.DataFrame({"feature": feat_cols, "importance": imp}).sort_values("importance", ascending=False)
         os.makedirs("reports", exist_ok=True)
         imp_df.to_csv("reports/feature_importance.csv", index=False)
@@ -198,8 +220,22 @@ def main():
         warnings.warn(f"Permutation importance skipped due to error: {e}")
 
     # --- save calibrated model + feature list + fixed label order ---
-    joblib.dump({"model": calibrated, "features": feat_cols, "labels": LABELS_ORDER}, "grader_model.pkl")
+    bundle = {
+        "model": calibrated,
+        "features": feat_cols,
+        "labels": LABELS_ORDER,
+        "mi_params": mi_params,
+    }
+    joblib.dump(bundle, "grader_model.pkl")
     print("Saved grader_model.pkl with labels:", LABELS_ORDER)
+
+    # Persist MI params separately for transparency/debugging
+    try:
+        os.makedirs("reports", exist_ok=True)
+        export_mi_params(mi_params, "reports/mi_params.json")
+        print("Saved reports/mi_params.json")
+    except Exception as e:
+        warnings.warn(f"Could not export MI params: {e}")
 
 if __name__ == "__main__":
     main()

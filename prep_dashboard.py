@@ -34,6 +34,10 @@ def main():
         "fat_within_steak_pct",
         "meat_within_steak_pct",
         "area_pct",
+        "marbling_index",
+        "mi_fat_component",
+        "mi_align_component",
+        "mi_lac_component",
     ] if c in f.columns]
 
     if key is not None and key in p.columns and key in f.columns:
@@ -62,6 +66,7 @@ def main():
     front = [c for c in [
         "image", "path", "label", "predicted",
         "confidence", "prime_similarity", "wagyu_similarity",
+        "marbling_index",
         "fat_within_steak_pct", "meat_within_steak_pct",
         "area_pct", "meat_pct",
         "prob_Select", "prob_Choice", "prob_Prime", "prob_Wagyu",
@@ -79,6 +84,7 @@ def main():
         "confidence", "prime_similarity", "wagyu_similarity",
         "fat_within_steak_pct", "meat_within_steak_pct",
         "area_pct", "meat_pct",
+        "marbling_index", "mi_fat_component", "mi_align_component", "mi_lac_component",
     ] + [c for c in m.columns if c.startswith("prob_")]
 
     for c in round_cols:

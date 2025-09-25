@@ -30,6 +30,10 @@ FEATURE_DEFS = {
     "orientation_anisotropy": "Directional alignment of fat structures (0–1). Higher → aligned strands; lower → isotropic.",
     "lacunarity_mean": "Measure of gaps/texture heterogeneity across scales. Higher → more irregular texture.",
     "glcm_contrast": "Texture contrast from GLCM. Higher → stronger local intensity differences.",
+    "marbling_index": "Composite marbling index (0–1) computed from fat%, alignment and lacunarity.",
+    "mi_fat_component": "Normalised fat contribution used in the marbling index (0–1).",
+    "mi_align_component": "Normalised alignment contribution used in the marbling index (0–1).",
+    "mi_lac_component": "Normalised lacunarity contribution used in the marbling index (0–1).",
 }
 
 def render_feature_table_html(features: dict) -> str:
@@ -105,6 +109,11 @@ def load_csv(path):
         df["meat_within_steak_pct"] = 100.0 - df["fat_within_steak_pct"]
     if "meat_pct" not in df.columns and "area_pct" in df.columns:
         df["meat_pct"] = 100 - df["area_pct"]
+
+    if "marbling_index" in df.columns:
+        df["marbling_index"] = pd.to_numeric(df["marbling_index"], errors="coerce")
+    if "MI_logit" not in df.columns and "marbling_index" in df.columns:
+        df["MI_logit"] = df["marbling_index"]
 
     # convenience: image basename + lowercase join key
     if "image" not in df.columns and "path" in df.columns:

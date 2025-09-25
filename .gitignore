@@ -17,3 +17,10 @@ venv/
 ENV/
 .idea/
 .DS_Store
+
+# Model artifacts
+grader_model.pkl
+
+# Generated analytics
+mi_by_grade.png
+reports/*.png
