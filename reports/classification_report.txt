@@ -1,0 +1,13 @@
+Accuracy: 0.983
+Macro-F1: 0.982
+
+              precision    recall  f1-score   support
+
+      Select       1.00      1.00      1.00        22
+      Choice       0.95      1.00      0.97        38
+       Prime       0.94      1.00      0.97        58
+       Wagyu       1.00      0.97      0.99       236
+
+    accuracy                           0.98       354
+   macro avg       0.97      0.99      0.98       354
+weighted avg       0.98      0.98      0.98       354

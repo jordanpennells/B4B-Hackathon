@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "weights": [
+    0.6,
+    0.3,
+    0.1
+  ],
+  "fat_feature": "fat_within_steak_pct",
+  "bounds": {
+    "fat_within_steak_pct": [
+      17.873494365209957,
+      93.44091040430308
+    ],
+    "orientation_dispersion": [
+      0.9706901905210732,
+      0.9999965236651756
+    ],
+    "lacunarity_mean": [
+      1.4294361829757691,
+      8.486287689208984
+    ]
+  },
+  "mi_column": "marbling_index",
+  "component_columns": {
+    "fat": "mi_fat_component",
+    "align": "mi_align_component",
+    "lac": "mi_lac_component"
+  }
+}

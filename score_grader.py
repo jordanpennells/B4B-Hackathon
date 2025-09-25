@@ -8,6 +8,8 @@ import pandas as pd
 import joblib
 import sys
 
+from mi_features import append_mi_feature
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--features", type=str, default="features.csv")
@@ -20,9 +22,13 @@ def main():
     model     = bundle["model"]
     feat_cols = bundle["features"]
     labels    = bundle["labels"]  # e.g. ["Select","Choice","Prime","Wagyu"]
+    mi_params = bundle.get("mi_params")
 
     # Load features
     df = pd.read_csv(args.features)
+
+    if mi_params is not None:
+        df = append_mi_feature(df, mi_params, include_components=True)
 
     # Ensure derived features the model expects (e.g., meat_pct) exist
     if "meat_pct" in feat_cols and "meat_pct" not in df.columns:
